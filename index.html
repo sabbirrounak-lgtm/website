@@ -31,29 +31,183 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "url": "https://sabbirkhan.co.uk/",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://sabbirkhan.co.uk/#person",
-    "name": "Md Sabbir Khan",
-    "alternateName": ["Sabbir Khan", "Mr Khan"],
-    "image": "https://avatars.githubusercontent.com/u/336608556?v=4&s=460",
-    "jobTitle": "Director - Partnership and Business Development",
-    "worksFor": { "@type": "Organization", "name": "Vive Education Group UK Ltd", "url": "https://viveeducationgroup.com/" },
-    "memberOf": { "@type": "Organization", "name": "UNIREA TRUST", "url": "https://unireatrust.com/", "description": "Registered charity (no. 1214762); Md Sabbir Khan serves as Trustee" },
-    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
-    "email": "mailto:sabbir.rounak@gmail.com",
-    "url": "https://sabbirkhan.co.uk/",
-    "sameAs": ["https://www.linkedin.com/in/md-sabbir-khan/", "https://github.com/sabbirrounak-lgtm"],
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "University of the West of Scotland" },
-      { "@type": "CollegeOrUniversity", "name": "Northern University Bangladesh" }
-    ],
-    "knowsLanguage": ["English", "Bengali", "Hindi", "Urdu"],
-    "knowsAbout": ["International student recruitment", "University partnerships", "Business development", "Transnational education (TNE)", "Agent network management", "Higher education market development"],
-    "description": "International Partnerships Director with 12+ years building compliant, student-centred growth for colleges and universities across the UK, Canada, Australia, South Asia and MENA."
-  }
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sabbirkhan.co.uk/#profilepage",
+      "url": "https://sabbirkhan.co.uk/",
+      "mainEntity": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sabbirkhan.co.uk/#person",
+      "name": "Md Sabbir Khan",
+      "alternateName": [
+        "Sabbir Khan",
+        "Mr Khan"
+      ],
+      "image": "https://avatars.githubusercontent.com/u/336608556?v=4&s=460",
+      "jobTitle": "Director - Partnership and Business Development",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Vive Education Group UK Ltd",
+        "url": "https://viveeducationgroup.com/"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "UNIREA TRUST",
+        "url": "https://unireatrust.com/",
+        "description": "Registered charity (no. 1214762); Md Sabbir Khan serves as Trustee"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      },
+      "email": "mailto:sabbir.rounak@gmail.com",
+      "url": "https://sabbirkhan.co.uk/",
+      "sameAs": [
+        "https://www.linkedin.com/in/md-sabbir-khan/",
+        "https://github.com/sabbirrounak-lgtm",
+        "https://en.wikipedia.org/wiki/User:823mrkhan"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of the West of Scotland"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Northern University Bangladesh"
+        }
+      ],
+      "knowsLanguage": [
+        "English",
+        "Bengali",
+        "Hindi",
+        "Urdu"
+      ],
+      "knowsAbout": [
+        "International student recruitment",
+        "University partnerships",
+        "Business development",
+        "Transnational education (TNE)",
+        "Agent network management",
+        "Higher education market development"
+      ],
+      "description": "International Partnerships Director with 12+ years building compliant, student-centred growth for colleges and universities across the UK, Canada, Australia, South Asia and MENA.",
+      "subjectOf": [
+        {
+          "@id": "https://sabbirkhan.co.uk/#podcast"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://sabbirkhan.co.uk/#podcast",
+      "name": "The Mr Khan Podcast",
+      "description": "Short episodes on building global futures through education, partnership and trust: responsible student recruitment, agent quality, AI in student advising and international education strategy.",
+      "url": "https://sabbirkhan.co.uk/insights.html",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vive Education Group UK Ltd",
+        "url": "https://viveeducationgroup.com/"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/md-sabbir-khan/recent-activity/all/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "In-Country Representatives: Revolutionizing International Student Recruitment",
+      "url": "https://www.linkedin.com/pulse/in-country-representatives-revolutionizing-student-recruitment-khan-wmzjc",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "headline": "Why International Student Recruitment Needs Representatives from the Same Country",
+      "url": "https://www.linkedin.com/pulse/why-international-student-recruitment-successful-specific-khan",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "headline": "Bangladesh Is the Second-Largest Market for International Student Recruitment in South Asia after India",
+      "url": "https://www.linkedin.com/pulse/bangladesh-largest-2nd-gaint-market-international-students-khan",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "headline": "New Opportunities for Immigrants and International Students in Canada 2021-2023",
+      "url": "https://www.linkedin.com/pulse/new-opportunities-immigrants-international-students-canada-khan",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "headline": "Past and Present of Bangladeshi Student Recruitment Abroad",
+      "url": "https://www.linkedin.com/pulse/past-present-bangladeshi-studnet-recruitment-abroad-md-sabbir-khan",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "headline": "Bangladeshi Student Recruitment Opportunities: Bangladeshi Students Heading for University Abroad",
+      "url": "https://www.linkedin.com/pulse/bangladeshi-student-recruitment-opportunities-students-md-sabbir-khan",
+      "author": {
+        "@id": "https://sabbirkhan.co.uk/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "inLanguage": "en"
+    }
+  ]
 }
 </script>
 
